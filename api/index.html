@@ -98,7 +98,7 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects"><span class="toc-number">1.</span> <span class="toc-text">/projects</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__gateways"><span class="toc-number">2.</span> <span class="toc-text">/projects/{projectId}/gateways</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__gateways_gatewayId__devices"><span class="toc-number">3.</span> <span class="toc-text">/projects/{projectId}/gateways{gatewayId}/devices</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__services"><span class="toc-number">4.</span> <span class="toc-text">/projects/{projectId}/services</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__services__serviceId__schedules"><span class="toc-number">5.</span> <span class="toc-text">/projects/{projectId}/services/{serviceId}/schedules</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__services__serviceId__rules"><span class="toc-number">6.</span> <span class="toc-text">/projects/{projectId}/services/{serviceId}/rules</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__services__serviceId__components"><span class="toc-number">7.</span> <span class="toc-text">/projects/{projectId}/services/{serviceId}/components</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_servicetypes"><span class="toc-number">8.</span> <span class="toc-text">/servicetypes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_componenttypes"><span class="toc-number">9.</span> <span class="toc-text">/componenttypes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_devicetypes"><span class="toc-number">10.</span> <span class="toc-text">/devicetypes</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects"><span class="toc-number">1.</span> <span class="toc-text">/projects</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__gateways"><span class="toc-number">2.</span> <span class="toc-text">/projects/{projectId}/gateways</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__gateways_gatewayId__devices"><span class="toc-number">3.</span> <span class="toc-text">/projects/{projectId}/gateways{gatewayId}/devices</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__services"><span class="toc-number">4.</span> <span class="toc-text">/projects/{projectId}/services</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__services__serviceId__rules"><span class="toc-number">5.</span> <span class="toc-text">/projects/{projectId}/services/{serviceId}/rules</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__services__serviceId__schedules"><span class="toc-number">6.</span> <span class="toc-text">/projects/{projectId}/services/{serviceId}/schedules</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_projects__projectId__services__serviceId__components"><span class="toc-number">7.</span> <span class="toc-text">/projects/{projectId}/services/{serviceId}/components</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_servicetypes"><span class="toc-number">8.</span> <span class="toc-text">/servicetypes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_componenttypes"><span class="toc-number">9.</span> <span class="toc-text">/componenttypes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#_devicetypes"><span class="toc-number">10.</span> <span class="toc-text">/devicetypes</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <!DOCTYPE HTML>
@@ -2865,6 +2865,591 @@
                 
                     <div class="panel panel-default">
                         <div class="panel-heading">
+                            <h3 id="_projects__projectId__services__serviceId__rules" class="panel-title">/projects/{projectId}/services/{serviceId}/rules</h3>
+                        </div>
+
+                        <div class="panel-body">
+                            
+
+                            <div class="panel-group">
+                                <div class="panel panel-white">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a class="block collapsed" data-toggle="collapse" href="#panel__projects__projectId__services__serviceId__rules">
+                
+                    <span class="badge badge_get">get</span>
+                
+                    <span class="badge badge_post">post</span>
+                
+                <span class="parent"></span>/projects/{projectId}/services/{serviceId}/rules
+            </a>
+        </h4>
+    </div>
+    <div id="panel__projects__projectId__services__serviceId__rules" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="list-group">
+                
+                    <a href="#" data-toggle="modal" data-target="#_projects__projectId__services__serviceId__rules_get" class="list-group-item">
+                        <span class="badge badge_get">get</span>
+                        获取业务规则列表
+                    </a>
+                
+                    <a href="#" data-toggle="modal" data-target="#_projects__projectId__services__serviceId__rules_post" class="list-group-item">
+                        <span class="badge badge_post">post</span>
+                        创建新业务规则，rule_id由服务器生成，此处不需提供
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="modal fade" id="_projects__projectId__services__serviceId__rules_get">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            <span class="badge badge_get">get</span>
+                            <span class="parent"></span>/projects/{projectId}/services/{serviceId}/rules
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-info"><p>获取业务规则列表</p>
+</div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#_projects__projectId__services__serviceId__rules_get_request" data-toggle="tab">Request</a>
+                            </li>
+                            
+                                <li>
+                                    <a href="#_projects__projectId__services__serviceId__rules_get_response" data-toggle="tab">Response</a>
+                                </li>
+                            
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="_projects__projectId__services__serviceId__rules_get_request">
+                                
+                                    <h3>URI Parameters</h3>
+                                    <ul>
+                                        
+                                            <li><strong>projectId</strong>: integer</li>
+                                        
+                                            <li><strong>serviceId</strong>: integer</li>
+                                        
+                                    </ul>
+                                
+
+                                
+
+                                
+                            </div>
+
+                            
+                                <div class="tab-pane" id="_projects__projectId__services__serviceId__rules_get_response">
+                                    
+                                        <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
+                                        <p>返回业务规则列表，列表中的每个条目按以下定义：</p>
+
+
+                                        
+
+                                        
+                                            <h3>Body</h3>
+                                            
+                                                <p><strong>Type: application/json</strong></p>
+                                                
+                                                    <strong>Schema:</strong>
+                                                    <pre>{ "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/schema"</span></span>,
+  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"业务规则"</span></span>,
+  "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>, "<span class="hljs-attribute">minLength</span>": <span class="hljs-value"><span class="hljs-number">1</span> </span>}</span>,
+    "<span class="hljs-attribute">preprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">preprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">process_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">process_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">postprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">postprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_state</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">service_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">project_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">team_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">created_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">updated_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}
+  </span>}</span>,
+  "<span class="hljs-attribute">additionalProperties</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+  "<span class="hljs-attribute">required</span>": <span class="hljs-value">[ <span class="hljs-string">"rule_name"</span>, <span class="hljs-string">"process_code"</span>, <span class="hljs-string">"process_params"</span> ]
+</span>}
+</pre>
+                                                
+                                                
+                                                    <strong>Example:</strong>
+                                                    <pre>{
+  "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value"><span class="hljs-string">"番茄一号大棚"</span></span>,
+  "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value"><span class="hljs-string">"描述可以为空"</span>
+</span>}
+</pre>
+                                                
+                                            
+                                        
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="_projects__projectId__services__serviceId__rules_post">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            <span class="badge badge_post">post</span>
+                            <span class="parent"></span>/projects/{projectId}/services/{serviceId}/rules
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-info"><p>创建新业务规则，rule_id由服务器生成，此处不需提供</p>
+</div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#_projects__projectId__services__serviceId__rules_post_request" data-toggle="tab">Request</a>
+                            </li>
+                            
+                                <li>
+                                    <a href="#_projects__projectId__services__serviceId__rules_post_response" data-toggle="tab">Response</a>
+                                </li>
+                            
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="_projects__projectId__services__serviceId__rules_post_request">
+                                
+                                    <h3>URI Parameters</h3>
+                                    <ul>
+                                        
+                                            <li><strong>projectId</strong>: integer</li>
+                                        
+                                            <li><strong>serviceId</strong>: integer</li>
+                                        
+                                    </ul>
+                                
+
+                                
+
+                                
+                                    <h3>Body</h3>
+                                    
+                                        <p><strong>Type: application/json</strong></p>
+                                        
+                                        
+                                            <strong>Schema:</strong>
+                                            <pre>{ "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/schema"</span></span>,
+  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"业务规则"</span></span>,
+  "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>, "<span class="hljs-attribute">minLength</span>": <span class="hljs-value"><span class="hljs-number">1</span> </span>}</span>,
+    "<span class="hljs-attribute">preprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">preprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">process_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">process_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">postprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">postprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_state</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">service_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">project_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">team_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">created_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">updated_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}
+  </span>}</span>,
+  "<span class="hljs-attribute">additionalProperties</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+  "<span class="hljs-attribute">required</span>": <span class="hljs-value">[ <span class="hljs-string">"rule_name"</span>, <span class="hljs-string">"process_code"</span>, <span class="hljs-string">"process_params"</span> ]
+</span>}
+</pre>
+                                        
+                                        
+                                            <strong>Example:</strong>
+                                            <pre>{
+  "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value"><span class="hljs-string">"番茄一号大棚"</span></span>,
+  "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value"><span class="hljs-string">"描述可以为空"</span>
+</span>}
+</pre>
+                                        
+                                    
+                                
+                            </div>
+
+                            
+                                <div class="tab-pane" id="_projects__projectId__services__serviceId__rules_post_response">
+                                    
+                                        <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
+                                        <p>业务规则创建成功</p>
+
+
+                                        
+
+                                        
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+
+
+    <div class="panel panel-white">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a class="block collapsed" data-toggle="collapse" href="#panel__projects__projectId__services__serviceId__rules__ruleId_">
+                
+                    <span class="badge badge_get">get</span>
+                
+                    <span class="badge badge_post">post</span>
+                
+                    <span class="badge badge_delete">delete</span>
+                
+                <span class="parent">/projects/{projectId}/services/{serviceId}/rules</span>/{ruleId}
+            </a>
+        </h4>
+    </div>
+    <div id="panel__projects__projectId__services__serviceId__rules__ruleId_" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="list-group">
+                
+                    <a href="#" data-toggle="modal" data-target="#_projects__projectId__services__serviceId__rules__ruleId__get" class="list-group-item">
+                        <span class="badge badge_get">get</span>
+                        获取单个业务规则
+                    </a>
+                
+                    <a href="#" data-toggle="modal" data-target="#_projects__projectId__services__serviceId__rules__ruleId__post" class="list-group-item">
+                        <span class="badge badge_post">post</span>
+                        更新业务规则
+                    </a>
+                
+                    <a href="#" data-toggle="modal" data-target="#_projects__projectId__services__serviceId__rules__ruleId__delete" class="list-group-item">
+                        <span class="badge badge_delete">delete</span>
+                        删除业务规则
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="modal fade" id="_projects__projectId__services__serviceId__rules__ruleId__get">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            <span class="badge badge_get">get</span>
+                            <span class="parent">/projects/{projectId}/services/{serviceId}/rules</span>/{ruleId}
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-info"><p>获取单个业务规则</p>
+</div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#_projects__projectId__services__serviceId__rules__ruleId__get_request" data-toggle="tab">Request</a>
+                            </li>
+                            
+                                <li>
+                                    <a href="#_projects__projectId__services__serviceId__rules__ruleId__get_response" data-toggle="tab">Response</a>
+                                </li>
+                            
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="_projects__projectId__services__serviceId__rules__ruleId__get_request">
+                                
+                                    <h3>URI Parameters</h3>
+                                    <ul>
+                                        
+                                            <li><strong>projectId</strong>: integer</li>
+                                        
+                                            <li><strong>serviceId</strong>: integer</li>
+                                        
+                                            <li><strong>ruleId</strong>: integer</li>
+                                        
+                                    </ul>
+                                
+
+                                
+
+                                
+                            </div>
+
+                            
+                                <div class="tab-pane" id="_projects__projectId__services__serviceId__rules__ruleId__get_response">
+                                    
+                                        <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
+                                        <p>返回对应的业务规则</p>
+
+
+                                        
+
+                                        
+                                            <h3>Body</h3>
+                                            
+                                                <p><strong>Type: application/json</strong></p>
+                                                
+                                                    <strong>Schema:</strong>
+                                                    <pre>{ "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/schema"</span></span>,
+  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"业务规则"</span></span>,
+  "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>, "<span class="hljs-attribute">minLength</span>": <span class="hljs-value"><span class="hljs-number">1</span> </span>}</span>,
+    "<span class="hljs-attribute">preprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">preprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">process_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">process_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">postprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">postprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_state</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">service_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">project_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">team_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">created_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">updated_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}
+  </span>}</span>,
+  "<span class="hljs-attribute">additionalProperties</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+  "<span class="hljs-attribute">required</span>": <span class="hljs-value">[ <span class="hljs-string">"rule_name"</span>, <span class="hljs-string">"process_code"</span>, <span class="hljs-string">"process_params"</span> ]
+</span>}
+</pre>
+                                                
+                                                
+                                                    <strong>Example:</strong>
+                                                    <pre>{
+  "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value"><span class="hljs-string">"番茄一号大棚"</span></span>,
+  "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value"><span class="hljs-string">"描述可以为空"</span>
+</span>}
+</pre>
+                                                
+                                            
+                                        
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="_projects__projectId__services__serviceId__rules__ruleId__post">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            <span class="badge badge_post">post</span>
+                            <span class="parent">/projects/{projectId}/services/{serviceId}/rules</span>/{ruleId}
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-info"><p>更新业务规则</p>
+</div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#_projects__projectId__services__serviceId__rules__ruleId__post_request" data-toggle="tab">Request</a>
+                            </li>
+                            
+                                <li>
+                                    <a href="#_projects__projectId__services__serviceId__rules__ruleId__post_response" data-toggle="tab">Response</a>
+                                </li>
+                            
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="_projects__projectId__services__serviceId__rules__ruleId__post_request">
+                                
+                                    <h3>URI Parameters</h3>
+                                    <ul>
+                                        
+                                            <li><strong>projectId</strong>: integer</li>
+                                        
+                                            <li><strong>serviceId</strong>: integer</li>
+                                        
+                                            <li><strong>ruleId</strong>: integer</li>
+                                        
+                                    </ul>
+                                
+
+                                
+
+                                
+                                    <h3>Body</h3>
+                                    
+                                        <p><strong>Type: application/json</strong></p>
+                                        
+                                        
+                                            <strong>Schema:</strong>
+                                            <pre>{ "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/schema"</span></span>,
+  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"业务规则"</span></span>,
+  "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>, "<span class="hljs-attribute">minLength</span>": <span class="hljs-value"><span class="hljs-number">1</span> </span>}</span>,
+    "<span class="hljs-attribute">preprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">preprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">process_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">process_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">postprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">postprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">rule_state</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">service_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">project_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">team_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
+    "<span class="hljs-attribute">created_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
+    "<span class="hljs-attribute">updated_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}
+  </span>}</span>,
+  "<span class="hljs-attribute">additionalProperties</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+  "<span class="hljs-attribute">required</span>": <span class="hljs-value">[ <span class="hljs-string">"rule_name"</span>, <span class="hljs-string">"process_code"</span>, <span class="hljs-string">"process_params"</span> ]
+</span>}
+</pre>
+                                        
+                                        
+                                            <strong>Example:</strong>
+                                            <pre>{
+  "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value"><span class="hljs-string">"番茄一号大棚"</span></span>,
+  "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value"><span class="hljs-string">"描述可以为空"</span>
+</span>}
+</pre>
+                                        
+                                    
+                                
+                            </div>
+
+                            
+                                <div class="tab-pane" id="_projects__projectId__services__serviceId__rules__ruleId__post_response">
+                                    
+                                        <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
+                                        <p>业务规则更新成功</p>
+
+
+                                        
+
+                                        
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="_projects__projectId__services__serviceId__rules__ruleId__delete">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            <span class="badge badge_delete">delete</span>
+                            <span class="parent">/projects/{projectId}/services/{serviceId}/rules</span>/{ruleId}
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-info"><p>删除业务规则</p>
+</div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#_projects__projectId__services__serviceId__rules__ruleId__delete_request" data-toggle="tab">Request</a>
+                            </li>
+                            
+                                <li>
+                                    <a href="#_projects__projectId__services__serviceId__rules__ruleId__delete_response" data-toggle="tab">Response</a>
+                                </li>
+                            
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="_projects__projectId__services__serviceId__rules__ruleId__delete_request">
+                                
+                                    <h3>URI Parameters</h3>
+                                    <ul>
+                                        
+                                            <li><strong>projectId</strong>: integer</li>
+                                        
+                                            <li><strong>serviceId</strong>: integer</li>
+                                        
+                                            <li><strong>ruleId</strong>: integer</li>
+                                        
+                                    </ul>
+                                
+
+                                
+
+                                
+                            </div>
+
+                            
+                                <div class="tab-pane" id="_projects__projectId__services__serviceId__rules__ruleId__delete_response">
+                                    
+                                        <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
+                                        <p>业务规则删除成功</p>
+
+
+                                        
+
+                                        
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
                             <h3 id="_projects__projectId__services__serviceId__schedules" class="panel-title">/projects/{projectId}/services/{serviceId}/schedules</h3>
                         </div>
 
@@ -3484,591 +4069,6 @@
                                     
                                         <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
                                         <p>定时任务删除成功</p>
-
-
-                                        
-
-                                        
-                                    
-                                </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-</div>
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 id="_projects__projectId__services__serviceId__rules" class="panel-title">/projects/{projectId}/services/{serviceId}/rules</h3>
-                        </div>
-
-                        <div class="panel-body">
-                            
-
-                            <div class="panel-group">
-                                <div class="panel panel-white">
-    <div class="panel-heading">
-        <h4 class="panel-title">
-            <a class="block collapsed" data-toggle="collapse" href="#panel__projects__projectId__services__serviceId__rules">
-                
-                    <span class="badge badge_get">get</span>
-                
-                    <span class="badge badge_post">post</span>
-                
-                <span class="parent"></span>/projects/{projectId}/services/{serviceId}/rules
-            </a>
-        </h4>
-    </div>
-    <div id="panel__projects__projectId__services__serviceId__rules" class="panel-collapse collapse">
-        <div class="panel-body">
-            <div class="list-group">
-                
-                    <a href="#" data-toggle="modal" data-target="#_projects__projectId__services__serviceId__rules_get" class="list-group-item">
-                        <span class="badge badge_get">get</span>
-                        获取业务规则列表
-                    </a>
-                
-                    <a href="#" data-toggle="modal" data-target="#_projects__projectId__services__serviceId__rules_post" class="list-group-item">
-                        <span class="badge badge_post">post</span>
-                        创建新业务规则，rule_id由服务器生成，此处不需提供
-                    </a>
-                
-            </div>
-        </div>
-    </div>
-
-    
-        <div class="modal fade" id="_projects__projectId__services__serviceId__rules_get">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">
-                            <span class="badge badge_get">get</span>
-                            <span class="parent"></span>/projects/{projectId}/services/{serviceId}/rules
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="alert alert-info"><p>获取业务规则列表</p>
-</div>
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs">
-                            <li class="active">
-                                <a href="#_projects__projectId__services__serviceId__rules_get_request" data-toggle="tab">Request</a>
-                            </li>
-                            
-                                <li>
-                                    <a href="#_projects__projectId__services__serviceId__rules_get_response" data-toggle="tab">Response</a>
-                                </li>
-                            
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="_projects__projectId__services__serviceId__rules_get_request">
-                                
-                                    <h3>URI Parameters</h3>
-                                    <ul>
-                                        
-                                            <li><strong>projectId</strong>: integer</li>
-                                        
-                                            <li><strong>serviceId</strong>: integer</li>
-                                        
-                                    </ul>
-                                
-
-                                
-
-                                
-                            </div>
-
-                            
-                                <div class="tab-pane" id="_projects__projectId__services__serviceId__rules_get_response">
-                                    
-                                        <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
-                                        <p>返回业务规则列表，列表中的每个条目按以下定义：</p>
-
-
-                                        
-
-                                        
-                                            <h3>Body</h3>
-                                            
-                                                <p><strong>Type: application/json</strong></p>
-                                                
-                                                    <strong>Schema:</strong>
-                                                    <pre>{ "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/schema"</span></span>,
-  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"业务规则"</span></span>,
-  "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>, "<span class="hljs-attribute">minLength</span>": <span class="hljs-value"><span class="hljs-number">1</span> </span>}</span>,
-    "<span class="hljs-attribute">preprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">preprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">process_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">process_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">postprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">postprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_state</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">service_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">project_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">team_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">created_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">updated_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}
-  </span>}</span>,
-  "<span class="hljs-attribute">additionalProperties</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
-  "<span class="hljs-attribute">required</span>": <span class="hljs-value">[ <span class="hljs-string">"rule_name"</span>, <span class="hljs-string">"process_code"</span>, <span class="hljs-string">"process_params"</span> ]
-</span>}
-</pre>
-                                                
-                                                
-                                                    <strong>Example:</strong>
-                                                    <pre>{
-  "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
-  "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value"><span class="hljs-string">"番茄一号大棚"</span></span>,
-  "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value"><span class="hljs-string">"描述可以为空"</span>
-</span>}
-</pre>
-                                                
-                                            
-                                        
-                                    
-                                </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="modal fade" id="_projects__projectId__services__serviceId__rules_post">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">
-                            <span class="badge badge_post">post</span>
-                            <span class="parent"></span>/projects/{projectId}/services/{serviceId}/rules
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="alert alert-info"><p>创建新业务规则，rule_id由服务器生成，此处不需提供</p>
-</div>
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs">
-                            <li class="active">
-                                <a href="#_projects__projectId__services__serviceId__rules_post_request" data-toggle="tab">Request</a>
-                            </li>
-                            
-                                <li>
-                                    <a href="#_projects__projectId__services__serviceId__rules_post_response" data-toggle="tab">Response</a>
-                                </li>
-                            
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="_projects__projectId__services__serviceId__rules_post_request">
-                                
-                                    <h3>URI Parameters</h3>
-                                    <ul>
-                                        
-                                            <li><strong>projectId</strong>: integer</li>
-                                        
-                                            <li><strong>serviceId</strong>: integer</li>
-                                        
-                                    </ul>
-                                
-
-                                
-
-                                
-                                    <h3>Body</h3>
-                                    
-                                        <p><strong>Type: application/json</strong></p>
-                                        
-                                        
-                                            <strong>Schema:</strong>
-                                            <pre>{ "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/schema"</span></span>,
-  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"业务规则"</span></span>,
-  "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>, "<span class="hljs-attribute">minLength</span>": <span class="hljs-value"><span class="hljs-number">1</span> </span>}</span>,
-    "<span class="hljs-attribute">preprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">preprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">process_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">process_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">postprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">postprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_state</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">service_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">project_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">team_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">created_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">updated_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}
-  </span>}</span>,
-  "<span class="hljs-attribute">additionalProperties</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
-  "<span class="hljs-attribute">required</span>": <span class="hljs-value">[ <span class="hljs-string">"rule_name"</span>, <span class="hljs-string">"process_code"</span>, <span class="hljs-string">"process_params"</span> ]
-</span>}
-</pre>
-                                        
-                                        
-                                            <strong>Example:</strong>
-                                            <pre>{
-  "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
-  "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value"><span class="hljs-string">"番茄一号大棚"</span></span>,
-  "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value"><span class="hljs-string">"描述可以为空"</span>
-</span>}
-</pre>
-                                        
-                                    
-                                
-                            </div>
-
-                            
-                                <div class="tab-pane" id="_projects__projectId__services__serviceId__rules_post_response">
-                                    
-                                        <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
-                                        <p>业务规则创建成功</p>
-
-
-                                        
-
-                                        
-                                    
-                                </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-</div>
-
-
-    <div class="panel panel-white">
-    <div class="panel-heading">
-        <h4 class="panel-title">
-            <a class="block collapsed" data-toggle="collapse" href="#panel__projects__projectId__services__serviceId__rules__ruleId_">
-                
-                    <span class="badge badge_get">get</span>
-                
-                    <span class="badge badge_post">post</span>
-                
-                    <span class="badge badge_delete">delete</span>
-                
-                <span class="parent">/projects/{projectId}/services/{serviceId}/rules</span>/{ruleId}
-            </a>
-        </h4>
-    </div>
-    <div id="panel__projects__projectId__services__serviceId__rules__ruleId_" class="panel-collapse collapse">
-        <div class="panel-body">
-            <div class="list-group">
-                
-                    <a href="#" data-toggle="modal" data-target="#_projects__projectId__services__serviceId__rules__ruleId__get" class="list-group-item">
-                        <span class="badge badge_get">get</span>
-                        获取单个业务规则
-                    </a>
-                
-                    <a href="#" data-toggle="modal" data-target="#_projects__projectId__services__serviceId__rules__ruleId__post" class="list-group-item">
-                        <span class="badge badge_post">post</span>
-                        更新业务规则
-                    </a>
-                
-                    <a href="#" data-toggle="modal" data-target="#_projects__projectId__services__serviceId__rules__ruleId__delete" class="list-group-item">
-                        <span class="badge badge_delete">delete</span>
-                        删除业务规则
-                    </a>
-                
-            </div>
-        </div>
-    </div>
-
-    
-        <div class="modal fade" id="_projects__projectId__services__serviceId__rules__ruleId__get">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">
-                            <span class="badge badge_get">get</span>
-                            <span class="parent">/projects/{projectId}/services/{serviceId}/rules</span>/{ruleId}
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="alert alert-info"><p>获取单个业务规则</p>
-</div>
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs">
-                            <li class="active">
-                                <a href="#_projects__projectId__services__serviceId__rules__ruleId__get_request" data-toggle="tab">Request</a>
-                            </li>
-                            
-                                <li>
-                                    <a href="#_projects__projectId__services__serviceId__rules__ruleId__get_response" data-toggle="tab">Response</a>
-                                </li>
-                            
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="_projects__projectId__services__serviceId__rules__ruleId__get_request">
-                                
-                                    <h3>URI Parameters</h3>
-                                    <ul>
-                                        
-                                            <li><strong>projectId</strong>: integer</li>
-                                        
-                                            <li><strong>serviceId</strong>: integer</li>
-                                        
-                                            <li><strong>ruleId</strong>: integer</li>
-                                        
-                                    </ul>
-                                
-
-                                
-
-                                
-                            </div>
-
-                            
-                                <div class="tab-pane" id="_projects__projectId__services__serviceId__rules__ruleId__get_response">
-                                    
-                                        <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
-                                        <p>返回对应的业务规则</p>
-
-
-                                        
-
-                                        
-                                            <h3>Body</h3>
-                                            
-                                                <p><strong>Type: application/json</strong></p>
-                                                
-                                                    <strong>Schema:</strong>
-                                                    <pre>{ "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/schema"</span></span>,
-  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"业务规则"</span></span>,
-  "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>, "<span class="hljs-attribute">minLength</span>": <span class="hljs-value"><span class="hljs-number">1</span> </span>}</span>,
-    "<span class="hljs-attribute">preprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">preprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">process_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">process_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">postprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">postprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_state</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">service_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">project_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">team_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">created_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">updated_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}
-  </span>}</span>,
-  "<span class="hljs-attribute">additionalProperties</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
-  "<span class="hljs-attribute">required</span>": <span class="hljs-value">[ <span class="hljs-string">"rule_name"</span>, <span class="hljs-string">"process_code"</span>, <span class="hljs-string">"process_params"</span> ]
-</span>}
-</pre>
-                                                
-                                                
-                                                    <strong>Example:</strong>
-                                                    <pre>{
-  "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
-  "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value"><span class="hljs-string">"番茄一号大棚"</span></span>,
-  "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value"><span class="hljs-string">"描述可以为空"</span>
-</span>}
-</pre>
-                                                
-                                            
-                                        
-                                    
-                                </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="modal fade" id="_projects__projectId__services__serviceId__rules__ruleId__post">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">
-                            <span class="badge badge_post">post</span>
-                            <span class="parent">/projects/{projectId}/services/{serviceId}/rules</span>/{ruleId}
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="alert alert-info"><p>更新业务规则</p>
-</div>
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs">
-                            <li class="active">
-                                <a href="#_projects__projectId__services__serviceId__rules__ruleId__post_request" data-toggle="tab">Request</a>
-                            </li>
-                            
-                                <li>
-                                    <a href="#_projects__projectId__services__serviceId__rules__ruleId__post_response" data-toggle="tab">Response</a>
-                                </li>
-                            
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="_projects__projectId__services__serviceId__rules__ruleId__post_request">
-                                
-                                    <h3>URI Parameters</h3>
-                                    <ul>
-                                        
-                                            <li><strong>projectId</strong>: integer</li>
-                                        
-                                            <li><strong>serviceId</strong>: integer</li>
-                                        
-                                            <li><strong>ruleId</strong>: integer</li>
-                                        
-                                    </ul>
-                                
-
-                                
-
-                                
-                                    <h3>Body</h3>
-                                    
-                                        <p><strong>Type: application/json</strong></p>
-                                        
-                                        
-                                            <strong>Schema:</strong>
-                                            <pre>{ "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/schema"</span></span>,
-  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"业务规则"</span></span>,
-  "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>, "<span class="hljs-attribute">minLength</span>": <span class="hljs-value"><span class="hljs-number">1</span> </span>}</span>,
-    "<span class="hljs-attribute">preprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">preprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">process_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">process_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">postprocess_code</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">postprocess_params</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">rule_state</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">service_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">project_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">team_id</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"integer"</span> </span>}</span>,
-    "<span class="hljs-attribute">created_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}</span>,
-    "<span class="hljs-attribute">updated_date</span>": <span class="hljs-value">{ "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span> </span>}
-  </span>}</span>,
-  "<span class="hljs-attribute">additionalProperties</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
-  "<span class="hljs-attribute">required</span>": <span class="hljs-value">[ <span class="hljs-string">"rule_name"</span>, <span class="hljs-string">"process_code"</span>, <span class="hljs-string">"process_params"</span> ]
-</span>}
-</pre>
-                                        
-                                        
-                                            <strong>Example:</strong>
-                                            <pre>{
-  "<span class="hljs-attribute">rule_id</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
-  "<span class="hljs-attribute">rule_name</span>": <span class="hljs-value"><span class="hljs-string">"番茄一号大棚"</span></span>,
-  "<span class="hljs-attribute">rule_desc</span>": <span class="hljs-value"><span class="hljs-string">"描述可以为空"</span>
-</span>}
-</pre>
-                                        
-                                    
-                                
-                            </div>
-
-                            
-                                <div class="tab-pane" id="_projects__projectId__services__serviceId__rules__ruleId__post_response">
-                                    
-                                        <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
-                                        <p>业务规则更新成功</p>
-
-
-                                        
-
-                                        
-                                    
-                                </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="modal fade" id="_projects__projectId__services__serviceId__rules__ruleId__delete">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">
-                            <span class="badge badge_delete">delete</span>
-                            <span class="parent">/projects/{projectId}/services/{serviceId}/rules</span>/{ruleId}
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="alert alert-info"><p>删除业务规则</p>
-</div>
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs">
-                            <li class="active">
-                                <a href="#_projects__projectId__services__serviceId__rules__ruleId__delete_request" data-toggle="tab">Request</a>
-                            </li>
-                            
-                                <li>
-                                    <a href="#_projects__projectId__services__serviceId__rules__ruleId__delete_response" data-toggle="tab">Response</a>
-                                </li>
-                            
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="_projects__projectId__services__serviceId__rules__ruleId__delete_request">
-                                
-                                    <h3>URI Parameters</h3>
-                                    <ul>
-                                        
-                                            <li><strong>projectId</strong>: integer</li>
-                                        
-                                            <li><strong>serviceId</strong>: integer</li>
-                                        
-                                            <li><strong>ruleId</strong>: integer</li>
-                                        
-                                    </ul>
-                                
-
-                                
-
-                                
-                            </div>
-
-                            
-                                <div class="tab-pane" id="_projects__projectId__services__serviceId__rules__ruleId__delete_response">
-                                    
-                                        <h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2>
-                                        <p>业务规则删除成功</p>
 
 
                                         
@@ -5183,9 +5183,9 @@
                         
                             <li><a href="#_projects__projectId__services">/projects/{projectId}/services</a></li>
                         
-                            <li><a href="#_projects__projectId__services__serviceId__schedules">/projects/{projectId}/services/{serviceId}/schedules</a></li>
-                        
                             <li><a href="#_projects__projectId__services__serviceId__rules">/projects/{projectId}/services/{serviceId}/rules</a></li>
+                        
+                            <li><a href="#_projects__projectId__services__serviceId__schedules">/projects/{projectId}/services/{serviceId}/schedules</a></li>
                         
                             <li><a href="#_projects__projectId__services__serviceId__components">/projects/{projectId}/services/{serviceId}/components</a></li>
                         
@@ -5205,7 +5205,7 @@
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-07-03T01:07:45.000Z" itemprop="dateModified">Last updated: Jul 3 2014</time>
+        <time id="page-footer-updated" datetime="2014-07-03T01:12:59.000Z" itemprop="dateModified">Last updated: Jul 3 2014</time>
         <a href="index.html" id="page-footer-next" title="Overview">Next</a>
       </footer>
       
