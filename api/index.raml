@@ -1,0 +1,62 @@
+#%RAML 0.8
+title: 莲雾云API
+version: 1
+baseUri: http://api.lianwutech.com/{version}
+documentation:
+ - title: 说明
+   content: |
+    描述莲雾云的API
+
+    1. 整体机制
+
+      整个系统采取“用户－项目(网关)－业务实例(中继器)－业务单元－传感器－数据点”六层概念，只提供数据点层接口，方便获取或更新数据。
+
+    2. 授权机制
+
+      用户注册成功后会分配一个UserKey，在调用需要授权的API时，需要在HTTP的Header中增加UserKey:您的UserKey，用Curl举例，如下：
+
+      ```sh
+      curl --request POST  http://www.lianwuyun.com/api/V1/updataSensors\
+       --data "[{\"Name\":\"T1\",\"Value\":\"23\"}]" --header "gateway_key:2c59c80b372exxxxxxe1632b99227899"
+      ```
+       
+    3. 调用机制
+
+      1. HTTP类型分为两种：Post和Get，Get方式直接在Url增加参数即可，处理Post方式，需要根据API参考的格式Post对应的数据，用Curl举例  `-request POST --data [{"Name":"T1","Value":“23"}]`
+
+      2. 返回格式均为Json，参照API参考获知各字段信息
+
+mediaType: application/json
+resourceTypes:
+  - base:
+      get?: &common
+        responses:
+          200:
+            description: 操作成功
+          304:
+            description: 没有更新的数据返回
+          400:
+            description: 非法的请求
+          401:
+            description: 验证失败
+          403:
+            description: 不允许该操作
+          404:
+            description: 资源找不到
+          500:
+            description: 服务器出错
+      post?: *common
+      delete?: *common
+
+/projects: !include project.raml
+/projects/{projectId}/gateways: !include gateway.raml
+/projects/{projectId}/gateways{gatewayId}/devices: !include device.raml
+/projects/{projectId}/services: !include service.raml
+/projects/{projectId}/services/{serviceId}/rules: !include rule.raml
+/projects/{projectId}/services/{serviceId}/schedules: !include schedule.raml
+/projects/{projectId}/services/{serviceId}/components: !include component.raml
+
+/servicetypes: !include servicetype.raml
+/componenttypes: !include componenttype.raml
+/devicetypes: !include devicetype.raml
+

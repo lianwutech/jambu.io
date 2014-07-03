@@ -2,113 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jambu.io/docs/models.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
+    <loc>http://jambu.io/api/index.html</loc>
+    <lastmod>2014-07-03T01:07:45.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://jambu.io/news/2014/06/14/hexo-2-7-released/</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/commands.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/configuration.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/contributing.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/deployment.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/events.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/generating.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/helpers.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
+    <loc>http://jambu.io/tutorial/index.html</loc>
+    <lastmod>2014-07-03T01:07:06.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://jambu.io/docs/index.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/migration.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
+    <lastmod>2014-07-03T01:07:01.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://jambu.io/index.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/pagination.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/permalinks.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/plugins.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/server.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/setup.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/tag-plugins.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/themes.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/troubleshooting.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/variables.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jambu.io/docs/writing.html</loc>
-    <lastmod>2014-07-01T09:37:03.000Z</lastmod>
+    <lastmod>2014-07-02T07:13:04.000Z</lastmod>
   </url>
   
 </urlset>
